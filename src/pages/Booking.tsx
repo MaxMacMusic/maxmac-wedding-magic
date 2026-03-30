@@ -13,19 +13,35 @@ const Booking = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
       toast({
         title: "Enquiry Sent!",
         description: "Max will get back to you within 24 hours. Thanks for reaching out!",
       });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+
+      form.reset();
+    } catch {
+      toast({
+        title: "Submission failed",
+        description: "Please try again or email maxmacbookings@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -54,14 +70,23 @@ const Booking = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid md:grid-cols-5 gap-12"
           >
+            {/* ✅ NETLIFY FORM — 3 changes from original:
+                1. Added name, method, data-netlify, netlify-honeypot attributes
+                2. Added two hidden inputs inside
+                3. handleSubmit is now async and actually POSTs to Netlify */}
             <form
-  name="booking"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  onSubmit={handleSubmit}
-  className="md:col-span-3 space-y-6"
->
+              name="booking"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="md:col-span-3 space-y-6"
+            >
+              {/* Required by Netlify */}
+              <input type="hidden" name="form-name" value="booking" />
+              {/* Honeypot — catches spam bots */}
+              <input type="hidden" name="bot-field" />
+
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-body text-sm text-foreground">Your Name</Label>
@@ -151,13 +176,7 @@ const Booking = () => {
                 </p>
                 <a
                   href="mailto:maxmacbookings@gmail.com"
-                  className="text-accent font-body text-sm hover:text-gold transition-colors"
-                >
-                  maxmacbookings@gmail.com
-                </a>
-              </div>
-            </div>
-          </motion.div>
+                  className="text-accent font-body text-sm hover:text-gold transition-colorson.div>
         </div>
       </div>
 
