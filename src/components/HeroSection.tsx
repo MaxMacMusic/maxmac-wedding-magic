@@ -24,7 +24,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="text-gold-light font-body tracking-[0.3em] uppercase text-sm mb-4"
         >
-          Wedding Singer · DJ · MC
+          Wedding Entertainment
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
