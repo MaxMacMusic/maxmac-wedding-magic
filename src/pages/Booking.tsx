@@ -84,11 +84,11 @@ const Booking = () => {
                     <SelectValue placeholder="Select services" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="ceremony">Ceremony Only</SelectItem>
-                    <SelectItem value="ceremony-reception">Ceremony + Reception</SelectItem>
+                    <SelectItem value="full-duo">Full Day Duo Package (Duo Acoustic + DJ) [MOST POPULAR]</SelectItem>
+                    <SelectItem value="full-solo">Full Day Solo Package (Solo Acoustic + DJ)</SelectItem>
+                    <SelectItem value="ceremony">Ceremony Only (Acoustic)</SelectItem>
                     <SelectItem value="reception">Reception Only (DJ)</SelectItem>
-                    <SelectItem value="full">Full Day (Acoustic + DJ + MC)</SelectItem>
-                    <SelectItem value="corporate">Corporate Event</SelectItem>
+                    <SelectItem value="full-mc">Full Day Package + MC</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
