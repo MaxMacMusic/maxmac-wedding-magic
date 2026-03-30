@@ -54,7 +54,14 @@ const Booking = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid md:grid-cols-5 gap-12"
           >
-            <form onSubmit={handleSubmit} className="md:col-span-3 space-y-6">
+            <form
+  name="booking"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  onSubmit={handleSubmit}
+  className="md:col-span-3 space-y-6"
+>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-body text-sm text-foreground">Your Name</Label>
