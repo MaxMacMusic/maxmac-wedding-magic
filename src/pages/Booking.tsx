@@ -70,10 +70,6 @@ const Booking = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid md:grid-cols-5 gap-12"
           >
-            {/* ✅ NETLIFY FORM — 3 changes from original:
-                1. Added name, method, data-netlify, netlify-honeypot attributes
-                2. Added two hidden inputs inside
-                3. handleSubmit is now async and actually POSTs to Netlify */}
             <form
               name="booking"
               method="POST"
@@ -82,9 +78,7 @@ const Booking = () => {
               onSubmit={handleSubmit}
               className="md:col-span-3 space-y-6"
             >
-              {/* Required by Netlify */}
               <input type="hidden" name="form-name" value="booking" />
-              {/* Honeypot — catches spam bots */}
               <input type="hidden" name="bot-field" />
 
               <div className="grid sm:grid-cols-2 gap-4">
@@ -176,7 +170,8 @@ const Booking = () => {
                 </p>
                 <a
                   href="mailto:maxmacbookings@gmail.com"
-                  className="text-accent font-body text-sm hover:text-gold transition-colorson.div>
+                  className="text-accent font-body text-sm hover:text</div>
+          </motion.div>
         </div>
       </div>
 
