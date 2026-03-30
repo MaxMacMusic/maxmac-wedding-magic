@@ -168,9 +168,15 @@ const Booking = () => {
                 <p className="text-muted-foreground font-body text-sm mb-3">
                   Drop Max a line directly:
                 </p>
-                <a
+                
+<a
                   href="mailto:maxmacbookings@gmail.com"
-                  className="text-accent font-body text-sm hover:text</div>
+                  className="text-accent font-body text-sm hover:text-gold transition-colors"
+                >
+                  maxmacbookings@gmail.com
+                </a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
