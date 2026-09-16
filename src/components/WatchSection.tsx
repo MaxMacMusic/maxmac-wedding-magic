@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const videos = [
+  { id: "wtR1rCcejOU", title: "Max Mac Wedding Entertainment" },
   { id: "F3fuh8N5Tak", title: "Max Mac Performance" },
   { id: "KPCkL7lmwYE", title: "Max Mac Live" },
   { id: "Ota8OsuRf0Y", title: "Max Mac Short 1", short: true },
