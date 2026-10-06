@@ -51,7 +51,7 @@ const HeroSection = () => {
           <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-gold font-body tracking-wider uppercase text-sm px-10 py-6">
             <Link to="/booking">Book Your Date</Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="border-cream/40 text-cream hover:bg-cream/10 font-body tracking-wider uppercase text-sm px-10 py-6">
+          <Button asChild variant="outline" size="lg" className="border-cream/40 bg-cream/10 text-cream hover:bg-cream/10 hover:text-cream font-body tracking-wider uppercase text-sm px-10 py-6">
             <a href="#about">Learn More</a>
           </Button>
         </motion.div>
