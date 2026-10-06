@@ -1,4 +1,10 @@
 import { motion } from "framer-motion";
+import gallery1 from "@/assets/gallery/gallery-1.jpg.asset.json";
+import gallery2 from "@/assets/gallery/gallery-2.jpg.asset.json";
+import gallery3 from "@/assets/gallery/gallery-3.jpg.asset.json";
+import gallery4 from "@/assets/gallery/gallery-4.jpg.asset.json";
+import gallery5 from "@/assets/gallery/gallery-5.jpg.asset.json";
+import gallery6 from "@/assets/gallery/gallery-6.jpg.asset.json";
 
 const videos = [
   { id: "wtR1rCcejOU", title: "Max Mac Wedding Entertainment" },
@@ -7,6 +13,8 @@ const videos = [
   { id: "Ota8OsuRf0Y", title: "Max Mac Short 1", short: true },
   { id: "WzJ6bXEctlM", title: "Max Mac Short 2", short: true },
 ];
+
+const photos = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 
 const WatchSection = () => {
   return (
