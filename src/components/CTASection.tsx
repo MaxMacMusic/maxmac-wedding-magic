@@ -16,7 +16,7 @@ const CTASection = () => {
           Let's Make Your Day Unforgettable
         </h2>
         <p className="text-cream/70 font-body text-lg mb-10 leading-relaxed">
-          2026 weekends are booking fast. Get in touch for a free consultation and personalised quote.
+          2027 & 2028 weekends are booking fast! Get in touch for a free consultation and personalised quote.
         </p>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold font-body tracking-wider uppercase text-sm px-12 py-6">
           <Link to="/booking">Enquire Now</Link>
