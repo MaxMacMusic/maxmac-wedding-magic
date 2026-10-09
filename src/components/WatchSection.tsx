@@ -55,6 +55,26 @@ const WatchSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-4">
+          {photos.map((photo, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              viewport={{ once: true }}
+              className="overflow-hidden rounded-lg shadow-lg"
+            >
+              <img
+                src={photo.url}
+                alt={`Max Mac performing at a wedding — photo ${index + 1}`}
+                className="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
