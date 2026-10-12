@@ -30,9 +30,9 @@ const WeddingTimeline = ({ heading = "One Artist, Your Whole Wedding Day" }: { h
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             viewport={{ once: true }}
-            className="mb-10 ml-8 md:ml-0 md:text-center"
+            className="relative mb-10 ml-8 md:ml-0 md:text-center"
           >
-            <span className="absolute -left-5 md:static md:mx-auto md:mb-4 flex w-10 h-10 rounded-full bg-accent text-accent-foreground items-center justify-center">
+            <span className="absolute -left-[3.25rem] top-0 md:static md:mx-auto md:mb-4 flex w-10 h-10 rounded-full bg-accent text-accent-foreground items-center justify-center">
               <s.icon className="w-5 h-5" aria-hidden="true" />
             </span>
             <p className="text-gold-light font-body uppercase tracking-widest text-xs mb-1">{i + 1}. {s.time}</p>
