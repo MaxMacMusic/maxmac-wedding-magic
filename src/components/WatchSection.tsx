@@ -6,15 +6,15 @@ import gallery4 from "@/assets/gallery/gallery-4.jpg.asset.json";
 import gallery5 from "@/assets/gallery/gallery-5.jpg.asset.json";
 import gallery6 from "@/assets/gallery/gallery-6.jpg.asset.json";
 
-const videos = [
-  { id: "wtR1rCcejOU", title: "Max Mac Wedding Entertainment" },
-  { id: "F3fuh8N5Tak", title: "Max Mac Performance" },
-  { id: "KPCkL7lmwYE", title: "Max Mac Live" },
-  { id: "Ota8OsuRf0Y", title: "Max Mac Short 1", short: true },
-  { id: "WzJ6bXEctlM", title: "Max Mac Short 2", short: true },
+export const videos = [
+  { id: "wtR1rCcejOU", title: "Max Mac Sydney wedding entertainment showreel" },
+  { id: "F3fuh8N5Tak", title: "Max Mac live acoustic and DJ wedding performance" },
+  { id: "KPCkL7lmwYE", title: "Max Mac live wedding singer and guitarist" },
+  { id: "Ota8OsuRf0Y", title: "Max Mac wedding ceremony performance clip", short: true },
+  { id: "WzJ6bXEctlM", title: "Max Mac wedding reception dance floor clip", short: true },
 ];
 
-const photos = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
+export const photos = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 
 const WatchSection = () => {
   return (

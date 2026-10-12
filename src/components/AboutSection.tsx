@@ -51,7 +51,7 @@ const AboutSection = () => {
                 </svg>
               ))}
             </div>
-            <span className="text-muted-foreground font-body text-sm">5.0 from 18 reviews</span>
+            <a href="https://www.easyweddings.com.au/WeddingMusic/Sydney/MaxMac/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground font-body text-sm underline-offset-4 hover:underline">5.0 from 22 reviews on Easy Weddings</a>
           </div>
         </motion.div>
       </div>

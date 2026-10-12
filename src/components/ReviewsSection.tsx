@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Quote, Star } from "lucide-react";
 
-const reviews = [
+export const reviews = [
   { name: "Elle B.", date: "September 2026", text: "Max was great on our wedding day, playing live during our ceremony, cocktail hour and then DJ for our reception. He even played some metal that we had requested later on in the night which was a hit! He brought awesome vibes to the day and everything ran smoothly. Thanks Max!" },
   { name: "Sophie K.", date: "September 2026", text: "Max was so personable and flexible. Nothing was too hard for him and managed everything with a big smile. Max is such a talented DJ and musician. I would highly recommend him for any event especially your wedding! What an awesome night made possible by him!" },
   { name: "Cameron Y.", date: "August 2026", text: "Max was absolutely perfect for our day. He smashed our aisle song, and everything he did throughout the day was amazing. Everyone commented on how good the music was in the ceremony, the cocktail hour and the dancefloor was pumping! We would 100% recommend Max to anyone looking to get a great musician/DJ for their event!" },
