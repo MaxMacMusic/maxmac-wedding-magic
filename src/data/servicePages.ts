@@ -49,7 +49,7 @@ export const servicePages: ServicePage[] = [
     showSignatureTimeline: true,
     faqs: [
       { q: "How does an acoustic + DJ package work on the day?", a: "Max plays acoustic guitar and vocals for the first half of the wedding — ceremony, canapés and dinner sets if booked — then switches to DJ for the dance floor." },
-      { q: "What's the difference between the solo and duo packages?", a: "The solo package features Max on his own for the acoustic sets; the duo package adds a second performer for a fuller live sound. Both include Max as your DJ." },
+      { q: "What's the difference between the solo and duo packages?", a: "The solo package features Max on his own for the acoustic sets; the duo package features a duo acoustic performance. Both include Max as your DJ — ask in your enquiry for full details." },
       { q: "Can we add MC services?", a: "Yes — the Full Day Package + MC adds hosting for introductions, speeches and formalities." },
       { q: "Do you travel outside Sydney?", a: "Yes. Max is based in Sydney and has performed at weddings across Australia and internationally, including NZ, Europe, the USA and the UK. Travel is arranged on enquiry." },
     ],
