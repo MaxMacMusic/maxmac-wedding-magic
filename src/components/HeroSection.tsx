@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Max Mac performing live at a wedding"
+          alt="Max Mac in a tuxedo playing acoustic guitar as a Sydney wedding singer"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
@@ -26,21 +26,22 @@ const HeroSection = () => {
         >
           Wedding Entertainment
         </motion.p>
-        <motion.h1
+        <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-display text-6xl md:text-8xl font-semibold text-cream mb-6"
         >
           Max Mac
-        </motion.h1>
+        </motion.p>
+        <h1 className="font-display text-2xl md:text-4xl text-cream mb-6">Sydney Wedding Singer, Acoustic Musician, DJ &amp; MC</h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-cream/80 font-body text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed"
         >
-          Creating unforgettable moments through soulful live music, high-energy DJ sets & seamless MC services
+          Book one professional entertainer for live ceremony music, canapés, dinner, DJ entertainment and optional MC services.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,10 +50,10 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-gold font-body tracking-wider uppercase text-sm px-10 py-6">
-            <Link to="/booking">Book Your Date</Link>
+            <Link to="/booking">Check Your Wedding Date</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="border-cream/40 bg-cream/10 text-cream hover:bg-cream/10 hover:text-cream font-body tracking-wider uppercase text-sm px-10 py-6">
-            <a href="#about">Learn More</a>
+            <a href="#watch">Watch Live Performance Videos</a>
           </Button>
         </motion.div>
       </div>

@@ -1,20 +1,24 @@
 import { motion } from "framer-motion";
 import { Music, Mic, Disc3 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Music,
     title: "Live Acoustic",
+    href: "/wedding-acoustic-musician-sydney/",
     description: "Soulful guitar and vocals for your ceremony, canapé hour, and dinner — creating intimate, romantic moments guests will never forget.",
   },
   {
     icon: Disc3,
     title: "DJ Sets",
+    href: "/wedding-dj-sydney/",
     description: "High-energy dance floor sets with a curated mix of classics and hits that keep every guest on their feet all night long.",
   },
   {
     icon: Mic,
     title: "MC Services",
+    href: "/wedding-mc-sydney/",
     description: "Seamless hosting that keeps your reception flowing — from speeches to first dances — with natural charisma and professionalism.",
   },
 ];
@@ -48,10 +52,14 @@ const ServicesSection = () => {
                 <service.icon className="w-7 h-7 text-accent" />
               </div>
               <h3 className="font-display text-2xl text-foreground mb-3">{service.title}</h3>
-              <p className="text-muted-foreground font-body leading-relaxed">{service.description}</p>
+              <p className="text-muted-foreground font-body leading-relaxed mb-4">{service.description}</p>
+              <Link to={service.href} className="text-accent font-body text-sm uppercase tracking-wider hover:underline underline-offset-4">Learn more about {service.title}</Link>
             </motion.div>
           ))}
         </div>
+        <p className="mt-10 font-body text-muted-foreground">
+          Planning your ceremony? See <Link to="/wedding-ceremony-music-sydney/" className="text-accent underline underline-offset-4">live wedding ceremony music</Link> or the <Link to="/sydney-wedding-singer-dj/" className="text-accent underline underline-offset-4">acoustic + DJ packages</Link>.
+        </p>
       </div>
     </section>
   );

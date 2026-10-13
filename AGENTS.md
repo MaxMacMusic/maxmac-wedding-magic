@@ -1,0 +1,2 @@
+- Service landing pages are data-driven from src/data/servicePages.ts rendered by src/pages/ServicePage.tsx — keeps pages consistent and routes/sitemap in sync.
+- Per-page title/description/canonical/JSON-LD set via usePageMeta in src/lib/seo.ts (no extra dependency); sitewide Person/WebSite JSON-LD lives in index.html. Canonical domain is https://maxmac.org.
