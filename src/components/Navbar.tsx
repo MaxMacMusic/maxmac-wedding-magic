@@ -11,9 +11,10 @@ const Navbar = () => {
   const links = [
     { label: "About", href: isHome ? "#about" : "/#about" },
     { label: "Services", href: isHome ? "#services" : "/#services" },
+    { label: "Singer + DJ", href: "/sydney-wedding-singer-dj/" },
     { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
     { label: "FAQ", href: isHome ? "#faq" : "/#faq" },
-    { label: "Book", href: "/booking" },
+    { label: "Check Your Date", href: "/booking" },
   ];
 
   return (
@@ -37,7 +38,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <button onClick={() => setOpen(!open)} className="md:hidden text-cream">
+        <button onClick={() => setOpen(!open)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} className="md:hidden text-cream">
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>

@@ -52,7 +52,7 @@ const ServicePage = ({ page }: { page: SP }) => {
             </nav>
             <h1 className="font-display text-4xl md:text-6xl text-foreground mb-6">{page.h1}</h1>
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-8">{page.intro}</p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold font-body tracking-wider uppercase text-sm px-8 py-6">
                 <Link to="/booking">Check Your Wedding Date</Link>
               </Button>

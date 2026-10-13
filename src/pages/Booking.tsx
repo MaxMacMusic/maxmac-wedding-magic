@@ -8,8 +8,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { usePageMeta } from "@/lib/seo";
+
+const meta = { title: "Check Your Wedding Date | Enquire with Max Mac, Sydney", description: "Check availability for your wedding. Request a personalised quote for live acoustic music, DJ and MC services from Max Mac in Sydney.", path: "/booking" };
 
 const Booking = () => {
+  usePageMeta(meta);
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 

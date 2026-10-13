@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Booking from "./pages/Booking.tsx";
+import ServicePage from "./pages/ServicePage.tsx";
+import { servicePages } from "./data/servicePages";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/booking" element={<Booking />} />
+          {servicePages.flatMap((p) => [
+            <Route key={p.path} path={p.path} element={<ServicePage page={p} />} />,
+            <Route key={p.path + "-n"} path={p.path.replace(/\/$/, "")} element={<ServicePage page={p} />} />,
+          ])}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
