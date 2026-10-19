@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import gallery1 from "@/assets/gallery/gallery-1.jpg.asset.json";
-import gallery2 from "@/assets/gallery/gallery-2.jpg.asset.json";
-import gallery3 from "@/assets/gallery/gallery-3.jpg.asset.json";
-import gallery4 from "@/assets/gallery/gallery-4.jpg.asset.json";
-import gallery5 from "@/assets/gallery/gallery-5.jpg.asset.json";
-import gallery6 from "@/assets/gallery/gallery-6.jpg.asset.json";
+import gallery1 from "@/assets/gallery/gallery-1.jpg";
+import gallery2 from "@/assets/gallery/gallery-2.jpg";
+import gallery3 from "@/assets/gallery/gallery-3.jpg";
+import gallery4 from "@/assets/gallery/gallery-4.jpg";
+import gallery5 from "@/assets/gallery/gallery-5.jpg";
+import gallery6 from "@/assets/gallery/gallery-6.jpg";
 
 export const videos = [
   { id: "wtR1rCcejOU", title: "Max Mac Sydney wedding entertainment showreel" },
@@ -14,7 +14,8 @@ export const videos = [
   { id: "WzJ6bXEctlM", title: "Max Mac wedding reception dance floor clip", short: true },
 ];
 
-export const photos = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
+// Bundled image files (not CDN asset pointers) so they also load on the Netlify-hosted maxmac.org.
+export const photos = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map((url) => ({ url }));
 
 const WatchSection = () => {
   return (
